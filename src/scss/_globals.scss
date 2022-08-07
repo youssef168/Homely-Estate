@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+
+//Set Global Colors
+$primary: #3454d1;
+$secondary: #121f3e;
+$white: #ffffff;
+$gray: #96a0b5;
+$gray300: #333333;
+$blue100: #ebeefa;
+$white100: #f8fafb;
+
+// Set Sizes
+
+// Heading Size
+$heading: 64px;
+
+$base: 16px;
+$title: 40px;
+$titleH4: 24px;
+$btnTxt: 14px;
+$font: 18px;
+
+// Radius Sizes
+$baseRaduis: 10px;
+$secondaryRaduis: 6px;
+
+// Media Queries All Sizes, Min/Max
+
+// For Mobile Devices
+$minMobile: 320px;
+$maxMobile: 480px;
+
+// For iPads, Tablets
+$minIPad: $maxMobile + 1;
+$maxIPad: 768px;
+
+// Small Screens, Laptops
+$minLaptops: $maxIPad + 1;
+$maxLaptops: 1024px;
+
+// Desktops, Large Screens
+$minDesktops: $maxLaptops + 1;
+$maxDesktops: 1200px;
+
+// Extra Large Screens, TV
+$extraLargeScreen: $maxDesktops + 1;
+
+// End Media Queries All Sizes, Min/Max
+
+// Main Transitions 
+$minTransition: .5s;
+$maxTransition: .7s;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Manrope', sans-serif !important;
+}
