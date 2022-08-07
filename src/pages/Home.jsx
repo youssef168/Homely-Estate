@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import AnimatedViewer from '../components/AnimatedViewer'
+import Hero from '../components/Hero'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <Fragment>
+        <Hero />
+    </Fragment>
   )
 }
 
