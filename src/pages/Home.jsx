@@ -1,11 +1,15 @@
-import React, { Fragment } from 'react'
-import AnimatedViewer from '../components/AnimatedViewer'
-import Hero from '../components/Hero'
+import React, { Fragment, Suspense } from 'react'
+import PageLoader from '../components/PageLoader'
+import useTitle from '../hooks/useTitle'
+const Hero = React.lazy(() => import('../components/Hero'))
 
 const Home = () => {
+  useTitle("Home")
   return (
     <Fragment>
-        <Hero />
+        <Suspense fallback={<h1>LOADING</h1>}>
+            <Hero />
+        </Suspense>
     </Fragment>
   )
 }

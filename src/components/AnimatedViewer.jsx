@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 const AnimatedViewer = ({ children }) => {
   return (
     <Fragment>
-        <motion.div whileInView={{ opacity: [0, 0, 1] }}>
+        <motion.div whileInView={{ opacity: [0, 0, 1] }} viewport={{ once: true }}>
             {children}
         </motion.div>
     </Fragment>

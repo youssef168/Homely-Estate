@@ -1,13 +1,19 @@
+import React, { Suspense } from "react";
 import "./App.css";
-import AppRouter from "./Router";
 import "./scss/main.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import ErrorBoundry from "./components/ErrorBoundry";
+const AppRouter = React.lazy(() => import('./Router'))
 
 function App() {
   return (
     <div className="App">
-      {/* Contains All Website Routes */}
-      <AppRouter />
+      <ErrorBoundry>
+        <Suspense fallback={<h1>LOADING</h1>}>
+          {/* Contains All Website Routes */}
+          <AppRouter />
+        </Suspense>
+      </ErrorBoundry>
     </div>
   );
 }

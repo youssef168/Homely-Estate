@@ -22,4 +22,4 @@ const PageLoader = () => {
   )
 }
 
-export default PageLoader
+export default React.memo(PageLoader)
